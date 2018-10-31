@@ -10,4 +10,3 @@ set lazyredraw
 set showmatch
 set mouse=a
 set number 
-
