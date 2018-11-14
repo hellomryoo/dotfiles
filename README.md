@@ -9,8 +9,8 @@
 [] [Markdown syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
 
 
-'''python
+```python
 x = []
 x.append(1)
 x.append(2)
-'''
+```
