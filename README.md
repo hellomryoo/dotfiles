@@ -6,5 +6,5 @@
 
 ## To do
 
-- [] [Markdown syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
-- [] [Latex](https://www.latex-project.org/)
+- [ ] [Markdown syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+- [ ] [Latex](https://www.latex-project.org/)
