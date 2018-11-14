@@ -14,3 +14,5 @@ x = []
 x.append(1)
 x.append(2)
 ```
+
+Use the backtick to refer to a `function()`.
