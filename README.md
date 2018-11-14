@@ -6,13 +6,5 @@
 
 ## To do
 
-[] [Markdown syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
-
-
-```python
-x = []
-x.append(1)
-x.append(2)
-```
-
-Use the backtick to refer to a `function()`.
+- [] [Markdown syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+- [] [Latex](https://www.latex-project.org/)
