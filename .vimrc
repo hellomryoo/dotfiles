@@ -13,7 +13,6 @@ set lazyredraw
 set showmatch
 set mouse=a
 set number
-set hlsearch
 set incsearch
 set ignorecase
 set smartcase
