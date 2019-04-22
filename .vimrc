@@ -1,13 +1,52 @@
 
-" basic setup
+" Vundle setup
+set nocompatible              " be iMproved, required
+filetype off                  " required <<========== We can turn it on later
+set laststatus=2
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdtree'
+Plugin 'townk/vim-autoclose'
+Plugin 'tomtom/tcomment_vim'
+" Plugin 'Valloric/YouCompleteMe'
+" <============================================>
+" Specify the plugins you want to install here.
+" We'll come on that later
+" <============================================>
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+" Put the rest of your .vimrc file here
+" basic setup
+
 colorscheme sublimemonokai
 syntax enable 
 set tabstop=4 
 set softtabstop=4  
 set showcmd
 set cursorline
-filetype plugin indent on
 set wildmenu 
 set lazyredraw
 set showmatch
@@ -32,27 +71,6 @@ vmap k gk
 nmap j gj
 nmap k gk
 
-" installing plugin
-
-call plug#begin()
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'tpope/vim-commentary'
-call plug#end()
-
-
-
-" Maps Ctrl-n
-map <C-n> :NERDTreeToggle<CR>
-
-" Show hidden files except for swp
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', '\.swo$']
-
-" Open NERDTree automatically on directory open
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
 " Split Panes Lookin Nice
 hi VertSplit cterm=NONE ctermbg=NONE ctermfg=NONE
 set splitbelow
@@ -72,4 +90,7 @@ map <silent> <C-t> <C-w>+
 map <silent> <C-y> <C-w>-
 map <silent> <C-o> <C-w><
 map <silent> <C-p> <C-w>>
+
+
+map <C-o> :NERDTreeToggle<CR>
 
